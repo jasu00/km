@@ -1,0 +1,227 @@
+#cssmenu {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+#cssmenu ul,
+#cssmenu li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font: small-caps 13px Arial, Helvetica, sans-serif;
+}
+
+.parentli {
+	background: url("/images/list-icon.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: right;
+	width: 16px;
+	height: 16px;
+}
+
+#cssmenu ul {
+	position: relative;
+	z-index: 597;
+	float: left;
+}
+
+#cssmenu ul li {
+	float: left;
+	min-height: 1px;
+	line-height: 1.5em;
+	vertical-align: middle;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+	position: relative;
+	z-index: 599;
+	cursor: default;
+}
+
+#cssmenu ul ul {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 598;
+	width: 100%;
+}
+
+#cssmenu ul ul li {
+	float: none;
+}
+#cssmenu ul ul,
+#cssmenu ul ul ul {
+	top: -1px;
+	left: 99%;
+}
+
+#cssmenu ul li:hover>ul {
+	visibility: visible;
+}
+
+#cssmenu ul li {
+	float: none;
+}
+#cssmenu:after,
+#cssmenu ul:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+/*
+#cssmenu ul {
+  background-image: linear-gradient(to right, red, orange);
+  padding: 4px;
+  width: 200px;
+  border-radius: .25rem;
+}
+*/
+#cssmenu ul {
+	padding: 5px;
+	width: 200px;
+	border-radius: .25rem;
+	border-color: #3a4c7d;
+	border-width: 0 0 5px 0;
+	border-style: solid;
+	color: #fff;
+	background-color: #a5b8da;
+	background-image: linear-gradient(to bottom, #a5b8da, #7089b3);
+}
+
+#cssmenu ul li {
+	color: #000000;
+	position: relative;
+}
+/*
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  background: #61b72d;
+  background: -moz-linear-gradient(#61b72d 0%, #4b8e23 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #61b72d), color-stop(100%, #4b8e23));
+  background: -webkit-linear-gradient(#61b72d 0%, #4b8e23 100%);
+  background: linear-gradient(yellow, orange);
+*/
+#cssmenu ul li.hover, #cssmenu ul li:hover {
+	color : silver;
+	border-color: #3a4c7d;
+	border-width: 0 0 2px 0;
+	border-style: solid;
+	background-color: #819bcb;
+	background-image: linear-gradient(to bottom, #819bcb, #536f9d);
+}
+
+#cssmenu ul ul {
+	width: 100%;
+}
+
+#cssmenu a {
+	border: 1px solid transparent;
+	/*display: block;*/
+}
+#cssmenu a:link,
+#cssmenu a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+#cssmenu li:hover a {
+  color : inherit;
+}
+/*
+#cssmenu a:hover {
+  background: #61b72d;
+  background: -moz-linear-gradient(#61b72d 0%, #4b8e23 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #61b72d), color-stop(100%, #4b8e23));
+  background: -webkit-linear-gradient(#61b72d 0%, #4b8e23 100%);
+  background: linear-gradient(yellow, orange);
+}
+*/
+
+#cssmenu a:active {
+	color: #ffa500;
+}
+#cssmenu .has-sub:hover > a:after,
+#cssmenu .has-sub.hover > a:after {
+	border-color: transparent transparent transparent #FFF;
+}
+
+#cssmenu .has-sub>a:after {
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 4px 0 4px 4px;
+	border-color: transparent transparent transparent #808080;
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	margin-top: -4px;
+	-webkit-transform: rotate(360deg);
+}
+
+.bodybackground {
+	background-image: url(/images/CiscoConfNavBarRibbon-white.png),linear-gradient(to right, black, grey);
+	background-repeat: repeat-y;
+	padding-left: 15px;
+	background-color: grey;
+}
+
+input {
+	border-radius: .25rem;
+	padding: .5rem .5rem;
+	border: 1px solid #d5dace;
+	background: silver;
+	transition: transform 0.5s;
+}
+
+input:focus {
+	border-radius: .25rem;
+	padding: .5rem .5rem;
+	border: 1px solid #d5dace;
+	background: white;
+}
+
+#dataGrid {
+	background: whitesmoke;
+	margin-top: 5px;
+}
+
+.fc-toolbar.fc-header-toolbar {
+	margin-bottom: 0px;
+}
+
+.planned_leave {
+	background-color: #60c060;
+}
+
+.unplanned_leave {
+	background-color: #e3bcc3;
+	color: black;
+}
+
+.wfh {
+	background-color: #d0d000;
+	color: black;
+}
+
+.duty {
+	background-color: #efbb79;
+	color: black;
+}
+
+.holiday {
+	background-image: url("/images/holiday.png");
+	background-size: 50px 20px;
+}
+
+.me_qe_ye {
+	background-image: url("/images/me_qe_ye.png");
+	background-size: 50px 20px;
+}
+
+.cr {
+	background-color: #d0d000;
+	color: black;
+}
